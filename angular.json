@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HotelBooking"
+    }
+  },
+  "defaultProject": "HotelBooking",
+  "cli": {
+    "analytics": false
+  }
 }
