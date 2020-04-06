@@ -1,6 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+// Material design Modules
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +33,11 @@ import { ExcursionsComponent } from './life-style/excursions/excursions.componen
 import { ResturantComponent } from './food-and-beverage/resturant/resturant.component';
 import { BarsComponent } from './food-and-beverage/bars/bars.component';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+
 
 @NgModule({
   declarations: [
@@ -43,11 +59,23 @@ import { RoomsComponent } from './accomodation/rooms/rooms.component';
     ExcursionsComponent,
     ResturantComponent,
     BarsComponent,
-    RoomsComponent
+    RoomsComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatTabsModule,
     AppRoutingModule
   ],
   providers: [],
