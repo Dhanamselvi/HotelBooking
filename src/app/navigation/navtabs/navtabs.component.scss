@@ -1,3 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme($hotel-booking) {
+    $primary: map-get($hotel-booking, primary );
+    $accent: map-get($hotel-booking,accent);
+
+    // pull all your theming styles here
+    .navtabs-container{
+        background-color: mat-color($hotel-booking-primary,500);
+    }
+}
+
+
+
 .toggle-flex{
     flex: 1 0.5 auto;
 }

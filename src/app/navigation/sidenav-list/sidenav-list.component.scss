@@ -1,3 +1,21 @@
+@import '~@angular/material/theming';
+
+@mixin sidenav-list-component-theme($hotel-booking) {
+    $primary: map-get($hotel-booking, primary );
+    $accent: map-get($hotel-booking,accent);
+
+    // pull all your theming styles here
+    .mat-list-option:hover, 
+    .mat-list-option:focus, 
+    .mat-nav-list .mat-list-item:hover, 
+    .mat-nav-list .mat-list-item:focus, 
+    .mat-action-list .mat-list-item:hover, 
+    .mat-action-list .mat-list-item:focus{
+        background-color: mat-color($hotel-booking-primary,300);
+        color: mat-color($hotel-booking-primary,900)
+    }
+}
+
 .sidenav-list{
     span{
         padding-left: 8px;
